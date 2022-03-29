@@ -39,32 +39,32 @@ echo "################################################################"
 tput sgr0
 echo
 
-result=$(systemd-detect-virt)
-
-if [ $result = "none" ];then
-
-	echo
-	tput setaf 2
-	echo "################################################################"
-	echo "####### Installing VirtualBox"
-	echo "################################################################"
-	tput sgr0
-	echo	
-
-	sh AUR/install-virtualbox-for-linux-v2.sh	
-
-else
-
-
-	echo
-	tput setaf 2
-	echo "################################################################"
-	echo "### You are on a virtual machine - skipping VirtualBox"
-	echo "################################################################"
-	tput sgr0
-	echo
-
-fi
+#result=$(systemd-detect-virt)
+#
+#if [ $result = "none" ];then
+#
+#	echo
+#	tput setaf 2
+#	echo "################################################################"
+#	echo "####### Installing VirtualBox"
+#	echo "################################################################"
+#	tput sgr0
+#	echo	
+#
+#	sh AUR/install-virtualbox-for-linux-v2.sh	
+#
+#else
+#
+#
+#	echo
+#	tput setaf 2
+#	echo "################################################################"
+#	echo "### You are on a virtual machine - skipping VirtualBox"
+#	echo "################################################################"
+#	tput sgr0
+#	echo
+#
+#fi
 
 # these come last always
 echo "Checking if icons from applications have a hardcoded path"

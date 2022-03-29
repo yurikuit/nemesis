@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Arc-Darkest"/>
-    <property name="IconThemeName" type="string" value="arcolinux-candy-beauty"/>
+    <property name="ThemeName" type="string" value="Arc-Crimson-Dark"/>
+    <property name="IconThemeName" type="string" value="Surfn-Luv-Red"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
