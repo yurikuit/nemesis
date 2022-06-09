@@ -1,12 +1,6 @@
-file:///home/yuri/DATA/Blender%203D
-file:///home/yuri/DATA/Blender%203D/_projects
-file:///home/yuri/DATA/Blender%203D/HDRI
-file:///home/yuri/DATA/Blender%203D/IES%20Lights
-file:///home/yuri/DATA/Blender%203D/Materials
-file:///home/yuri/DATA/Blender%203D/Objects
-file:///home/yuri/DATA/Blender%203D/Textures
-smb://hades.local/documents/
-smb://hades.local/downloads/
-smb://hades.local/media/
-smb://hades.local/software/
+file:///home/yuri/DATA/Blender3D
+smb://192.168.101.10/documents/
+smb://192.168.101.10/downloads/
+smb://192.168.101.10/media/
+smb://192.168.101.10/software/
 file:///personal personal
