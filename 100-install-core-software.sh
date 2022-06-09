@@ -100,6 +100,7 @@ echo "################################################################"
 tput sgr0
 echo
 
+sudo pacman -S --noconfirm --needed nano
 sudo pacman -S --noconfirm --needed aic94xx-firmware
 sudo pacman -S --noconfirm --needed arc-gtk-theme
 sudo pacman -S --noconfirm --needed arc-darkest-theme-git
@@ -111,13 +112,13 @@ sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin
 #sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed cpuid
-sudo pacman -S --noconfirm --needed discord
+#sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed flameshot-git
-sudo pacman -S --noconfirm --needed gitahead-bin
-sudo pacman -S --noconfirm --needed gitfiend
-sudo pacman -S --noconfirm --needed insync
+#sudo pacman -S --noconfirm --needed gitahead-bin
+#sudo pacman -S --noconfirm --needed gitfiend
+#sudo pacman -S --noconfirm --needed insync
 sudo pacman -S --noconfirm --needed meld
 #sudo pacman -S --noconfirm --needed nomacs
 sudo pacman -S --noconfirm --needed polkit-gnome
@@ -126,7 +127,7 @@ sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed surfn-icons-git
-sudo pacman -S --noconfirm --needed telegram-desktop
+#sudo pacman -S --noconfirm --needed telegram-desktop
 #sudo pacman -S --noconfirm --needed the_platinum_searcher-bin
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 sudo pacman -S --noconfirm --needed upd72020x-fw
@@ -137,6 +138,7 @@ sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
+sudo pacman -S --noconfirm --needed libreoffice-fresh
 
 ###############################################################################################
 
@@ -235,13 +237,13 @@ if grep -q "Arch Linux" /etc/os-release; then
   sudo pacman -S --noconfirm --needed alacritty
   sudo pacman -S --noconfirm --needed arcolinux-alacritty-git
   sudo pacman -S --noconfirm --needed arcolinux-hblock-git
-  sudo pacman -S --noconfirm --needed arcolinux-logout-git
+  sudo pacman -S --noconfirm --needed archlinux-logout-git
   sudo pacman -S --noconfirm --needed arcolinux-paru-git
   sudo pacman -S --noconfirm --needed arcolinux-root-git
-  #sudo pacman -S --noconfirm --needed arcolinux-system-config-git
-  sudo pacman -S --noconfirm --needed arcolinux-system-config-dev-git  
+  sudo pacman -S --noconfirm --needed archlinux-system-config-git
+  #sudo pacman -S --noconfirm --needed arcolinux-system-config-dev-git  
   #sudo pacman -S --noconfirm --needed lsb-release
-  sudo pacman -S --noconfirm --needed arcolinux-tweak-tool-git
+  sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
   sudo pacman -S --noconfirm --needed arcolinux-variety-git
   sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
   sudo pacman -S --noconfirm --needed arcolinux-zsh-git

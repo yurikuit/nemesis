@@ -51,6 +51,9 @@ sudo pacman -Rs xf86-video-ati --noconfirm
 sudo pacman -Rs xf86-video-nouveau --noconfirm
 sudo pacman -Rs xf86-video-vesa --noconfirm
 
+sudo pacman -Rs mousepad --noconfirm
+sudo pacman -Rs xfburn --noconfirm
+
 echo
 tput setaf 2
 echo "################################################################"
