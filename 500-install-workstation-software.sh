@@ -95,7 +95,7 @@ echo "################################################################"
 tput sgr0
 echo
 
-#sudo pacman -S --noconfirm --needed chromium
+#sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed gitahead-bin
 sudo pacman -S --noconfirm --needed gitfiend
@@ -106,6 +106,38 @@ sudo pacman -S --noconfirm --needed gitfiend
 sudo pacman -S --noconfirm --needed telegram-desktop
 #sudo pacman -S --noconfirm --needed the_platinum_searcher-bin
 sudo pacman -S --noconfirm --needed ttf-wps-fonts
+sudo pacman -S --noconfirm --needed libreoffice-fresh
+
+sudo pacman -S --noconfirm --needed oh-my-zsh-git
+sudo pacman -S --noconfirm --needed zsh
+sudo pacman -S --noconfirm --needed zsh-completions
+sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
+
+sudo pacman -S --noconfirm --needed blender
+sudo pacman -S --noconfirm --needed gimp
+sudo pacman -S --noconfirm --needed inkscape
+sudo pacman -S --noconfirm --needed krita
+sudo pacman -S --noconfirm --needed ffmpeg
+sudo pacman -S --noconfirm --needed imagemagick
+sudo pacman -S --noconfirm --needed ventoy-bin
+sudo pacman -S --noconfirm --needed zsh-completions-git
+sudo pacman -S --noconfirm --needed calibre
+sudo pacman -S --noconfirm --needed rxvt-unicode
+sudo pacman -S --noconfirm --needed remmina
+sudo pacman -S --noconfirm --needed whatsapp-nativefier
+sudo pacman -S --noconfirm --needed emby-theater
+sudo pacman -S --noconfirm --needed handbrake
+sudo pacman -S --noconfirm --needed makemkv
+sudo pacman -S --noconfirm --needed mediainfo
+sudo pacman -S --noconfirm --needed spotify
+sudo pacman -S --noconfirm --needed evolution
+#sudo pacman -S --noconfirm --needed gthumb
+sudo pacman -S --noconfirm --needed gparted
+
+paru -S --noconfirm davinci-resolve
+paru -S --noconfirm youtube-dl 
+paru -S --noconfirm mkv-extractor-qt
+paru -S --noconfirm tsmuxer-git
 
 ###############################################################################################
 

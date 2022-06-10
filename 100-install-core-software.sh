@@ -109,8 +109,8 @@ sudo pacman -S --noconfirm --needed arcolinux-candy-beauty-git
 sudo pacman -S --noconfirm --needed arcolinux-fish-git
 sudo pacman -S --noconfirm --needed ayu-theme
 sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin
-#sudo pacman -S --noconfirm --needed chromium
-sudo pacman -S --noconfirm --needed google-chrome
+sudo pacman -S --noconfirm --needed chromium
+#sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed cpuid
 #sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed file-roller
@@ -138,7 +138,7 @@ sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
-sudo pacman -S --noconfirm --needed libreoffice-fresh
+
 
 ###############################################################################################
 
@@ -261,15 +261,15 @@ if grep -q "Arch Linux" /etc/os-release; then
   sudo pacman -S --noconfirm --needed meld
   sudo pacman -S --noconfirm --needed neofetch
   sudo pacman -S --noconfirm --needed nss-mdns
-  sudo pacman -S --noconfirm --needed oh-my-zsh-git
+  #sudo pacman -S --noconfirm --needed oh-my-zsh-git
   sudo pacman -S --noconfirm --needed paru-bin
   sudo pacman -S --noconfirm --needed rate-mirrors-bin
   sudo pacman -S --noconfirm --needed ripgrep
   sudo pacman -S --noconfirm --needed variety
   sudo pacman -S --noconfirm --needed yay-bin
-  sudo pacman -S --noconfirm --needed zsh
-  sudo pacman -S --noconfirm --needed zsh-completions
-  sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
+  #sudo pacman -S --noconfirm --needed zsh
+  #sudo pacman -S --noconfirm --needed zsh-completions
+  #sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 
   sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
   sudo pacman -S --noconfirm --needed awesome-terminal-fonts
