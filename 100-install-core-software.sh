@@ -138,7 +138,8 @@ sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
-
+sudo pacman -S --noconfirm --needed networkmanager
+sudo pacman -S --noconfirm --needed network-manager-applet
 
 ###############################################################################################
 
