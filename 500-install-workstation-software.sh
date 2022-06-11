@@ -95,7 +95,6 @@ echo "################################################################"
 tput sgr0
 echo
 
-#sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed gitahead-bin
 sudo pacman -S --noconfirm --needed gitfiend
@@ -134,10 +133,10 @@ sudo pacman -S --noconfirm --needed evolution
 #sudo pacman -S --noconfirm --needed gthumb
 sudo pacman -S --noconfirm --needed gparted
 
-paru -S --noconfirm davinci-resolve
+#paru -S --noconfirm davinci-resolve
 paru -S --noconfirm youtube-dl 
 paru -S --noconfirm mkv-extractor-qt
-paru -S --noconfirm tsmuxer-git
+#paru -S --noconfirm tsmuxer-git
 
 ###############################################################################################
 
