@@ -17,6 +17,35 @@ sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed git
 
 echo
+tput setaf 3
+echo "################################################################"
+echo "################### fix missing console font"
+echo "################################################################"
+tput sgr0
+echo
+
+if grep -q FONT= /etc/vconsole.conf; then
+
+  echo
+  tput setaf 2
+  echo "################################################################"
+  echo "################### FONT is already set in /etc/vconsole.conf"
+  echo "################################################################"
+  tput sgr0
+  echo
+
+else
+
+  tput setaf 2
+  echo "################################################################"
+  echo "################### FONT added to /etc/vconsole.conf"
+  echo "################################################################"
+  tput sgr0
+
+echo 'FONT=gr737c-8x14' | sudo tee -a /etc/vconsole.conf
+fi
+
+echo
 tput setaf 2
 echo "################################################################"
 echo "################### Software to install"
