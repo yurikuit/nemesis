@@ -39,6 +39,8 @@ sudo pacman -Rs xf86-video-vesa --noconfirm
 
 sudo pacman -Rs mousepad --noconfirm
 sudo pacman -Rs xfburn --noconfirm
+sudo pacman -Rs xfce4-screenshooter --noconfirm
+sudo pacman -Rs vim --noconfirm
 
 echo
 tput setaf 2
