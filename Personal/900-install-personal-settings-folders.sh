@@ -56,6 +56,30 @@ echo
 cp  settings/thunar/uca.xml $HOME/.config/Thunar
 echo
 
+#adding desktop icons
+if [ -f $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml" ]; then
+
+  echo
+  echo "Setting desktop icons"
+  echo
+  FIND="<property name="show-home" type="bool" value="false"/>"
+  REPLACE="<property name="show-home" type="bool" value="true"/>"
+    sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
+
+  FIND="<property name="show-filesystem" type="bool" value="false"/>"
+  REPLACE="<property name="show-filesystem" type="bool" value="true"/>"
+    sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
+
+  FIND="<property name="show-trash" type="bool" value="false"/>"
+  REPLACE="<property name="show-trash" type="bool" value="true"/>"
+    sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
+
+  FIND="<property name="show-removable" type="bool" value="false"/>"
+  REPLACE="<property name="show-removable" type="bool" value="true"/>"
+    sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"    
+
+fi
+
 echo
 tput setaf 2
 echo "################################################################"
