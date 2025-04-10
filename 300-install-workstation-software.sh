@@ -68,14 +68,6 @@ if grep -q "Arch Linux" /etc/os-release; then
   echo
   #sudo pacman -S --noconfirm --needed lsb-release
 
-  echo
-  echo "################################################################"
-  echo "Getting latest /etc/nsswitch.conf from ArcoLinux"
-  echo "################################################################"
-  echo
-#  sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
-#  sudo wget https://raw.githubusercontent.com/arcolinux/arcolinuxl-iso/master/archiso/airootfs/etc/nsswitch.conf -O $workdir/etc/nsswitch.conf
-
   # when on Xfce4
 
   if [ -f /usr/share/xsessions/xfce.desktop ]; then
