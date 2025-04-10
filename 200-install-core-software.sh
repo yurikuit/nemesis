@@ -25,6 +25,10 @@ tput sgr0
 echo
 
 # here we assume we are on anything Arch Linux based - ArcoLinux as a rule
+cd $HOME"/DATA"
+git clone https://github.com/arcolinux/arcolinux-spices
+sudo ./usr/share/arcolinux-spices/scripts/get-the-keys-and-repos.sh
+sudo pacman -Sy
 
 echo
 tput setaf 2
@@ -103,7 +107,7 @@ sudo pacman -S --noconfirm --needed arcolinux-systemd-services-git ## from the g
 sudo pacman -S --noconfirm --needed arcoinstall-system-config-git ## from the guide
 sudo pacman -S --noconfirm --needed arcoinstall-pacman-git ## from the guide
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git ## from the guide
-sudo pacman -S --noconfirm --needed arcolinux-variety-git ## from the guide
+sudo pacman -S --noconfirm --needed arconet-variety-config ## from the guide
 sudo pacman -S --noconfirm --needed arcolinux-variety-autostart-git ## from the guide
 sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git ## from the guide
 
