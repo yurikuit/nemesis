@@ -62,20 +62,18 @@ if [ -f $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml" ]; th
   echo
   echo "Setting desktop icons"
   echo
-  FIND="<property name="show-home" type="bool" value="false"/>"
-  REPLACE="<property name="show-home" type="bool" value="true"/>"
+  FIND="false"
+  REPLACE="true"
+  SEARCH="show-home"
+    sudo sed -i "/$SEARCH/s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
+
+  SEARCH="show-filesystem"
     sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
 
-  FIND="<property name="show-filesystem" type="bool" value="false"/>"
-  REPLACE="<property name="show-filesystem" type="bool" value="true"/>"
+  SEARCH="show-trash"
     sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
 
-  FIND="<property name="show-trash" type="bool" value="false"/>"
-  REPLACE="<property name="show-trash" type="bool" value="true"/>"
-    sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
-
-  FIND="<property name="show-removable" type="bool" value="false"/>"
-  REPLACE="<property name="show-removable" type="bool" value="true"/>"
+  SEARCH="show-removable"
     sudo sed -i "s/$FIND/$REPLACE/g" $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"    
 
 fi
