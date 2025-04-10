@@ -111,6 +111,7 @@ sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed nm-connection-editor
 sudo pacman -S --noconfirm --needed networkmanager-openvpn
+sudo pacman -S --noconfirm --needed catfish
 
 sudo pacman -S --noconfirm --needed arc-gtk-theme ## from the guide
 sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin ## from the guide
