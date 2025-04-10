@@ -37,7 +37,7 @@ cd $installed_dir/Personal
 
 sh 900-install-personal-settings-folders*
 sh 905-install-personal-settings-bookmarks*
-sh 930-autostart-applications*
+## sh 930-autostart-applications*
 sh 940-btrfs-setup*
 sh 970-arch*
 
