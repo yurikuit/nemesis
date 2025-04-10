@@ -100,6 +100,17 @@ sudo pacman -S --noconfirm --needed rate-mirrors-bin
 sudo pacman -S --noconfirm --needed ripgrep ## from the guide
 sudo pacman -S --noconfirm --needed yay-git ## from the guide
 sudo pacman -S --noconfirm --needed alacritty ## from the guide
+sudo pacman -S --noconfirm --needed lshw
+sudo pacman -S --noconfirm --needed powertop
+sudo pacman -S --noconfirm --needed inxi
+sudo pacman -S --noconfirm --needed acpi
+sudo pacman -S --noconfirm --needed base-devel
+sudo pacman -S --noconfirm --needed zip
+sudo pacman -S --noconfirm --needed unzip
+sudo pacman -S --noconfirm --needed p7zip
+sudo pacman -S --noconfirm --needed rsync
+sudo pacman -S --noconfirm --needed nm-connection-editor
+sudo pacman -S --noconfirm --needed networkmanager-openvpn
 
 sudo pacman -S --noconfirm --needed arc-gtk-theme ## from the guide
 sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin ## from the guide
@@ -143,6 +154,22 @@ sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git ## from the guide
 sudo pacman -S --noconfirm --needed avahi
 sudo systemctl enable avahi-daemon.service
 
+#Enable Bluetooth
+sudo pacman -S --noconfirm --needed bluez
+sudo pacman -S --noconfirm --needed bluez-utils
+sudo pacman -S --noconfirm --needed blueman
+sudo systemctl enable bluetooth
+
+#Enable printing
+sudo pacman -S --noconfirm --needed cups
+sudo pacman -S --noconfirm --needed cups-filters
+sudo pacman -S --noconfirm --needed cups-pdf
+sudo pacman -S --noconfirm --needed system-config-printer
+sudo pacman -S --noconfirm --needed hplip
+sudo systemctl enable cups.service
+
+#Run service that will discard unused blocks on mounted filesystems. This is useful for solid-state drives (SSDs) and thinly-provisioned storage. 
+sudo systemctl enable fstrim.timer
 ###############################################################################################
 
 # when on Arch Linux
