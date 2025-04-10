@@ -34,24 +34,81 @@ echo "################################################################"
 tput sgr0
 echo
 
-sudo pacman -S --noconfirm --needed nano
 sudo pacman -S --noconfirm --needed aic94xx-firmware
-sudo pacman -S --noconfirm --needed arc-gtk-theme
-sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin
-sudo pacman -S --noconfirm --needed google-chrome
-sudo pacman -S --noconfirm --needed cpuid
-sudo pacman -S --noconfirm --needed firefox
-sudo pacman -S --noconfirm --needed flameshot-git
-sudo pacman -S --noconfirm --needed gitahead-bin
-sudo pacman -S --noconfirm --needed meld
-sudo pacman -S --noconfirm --needed polkit-gnome
-sudo pacman -S --noconfirm --needed sublime-text-4
-sudo pacman -S --noconfirm --needed surfn-icons-git
 sudo pacman -S --noconfirm --needed upd72020x-fw
-sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
+
+sudo pacman -S --noconfirm --needed nano ## from the guide
+sudo pacman -S --noconfirm --needed cpuid
+sudo pacman -S --noconfirm --needed bash-completion ## from the guide
 sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed network-manager-applet
+sudo pacman -S --noconfirm --needed meld ## from the guide
+sudo pacman -S --noconfirm --needed polkit-gnome
+sudo pacman -S --noconfirm --needed pamac ## from the guide
+sudo pacman -S --noconfirm --needed btop ## from the guide
+sudo pacman -S --noconfirm --needed htop ## from the guide
+sudo pacman -S --noconfirm --needed arandr ## from the guide
+sudo pacman -S --noconfirm --needed lsb-release
+sudo pacman -S --noconfirm --needed bat ## from the guide
+sudo pacman -S --noconfirm --needed dmenu ## from the guide
+sudo pacman -S --noconfirm --needed expac ## from the guide
+sudo pacman -S --noconfirm --needed feh ## from the guide
+sudo pacman -S --noconfirm --needed gvfs-smb
+sudo pacman -S --noconfirm --needed hardcode-fixer-git
+sudo pacman -S --noconfirm --needed hw-probe
+sudo pacman -S --noconfirm --needed man-db ## from the guide
+sudo pacman -S --noconfirm --needed man-pages ## from the guide
+sudo pacman -S --noconfirm --needed meld ## from the guide
+sudo pacman -S --noconfirm --needed neofetch ## from the guide
+sudo pacman -S --noconfirm --needed nss-mdns
+sudo pacman -S --noconfirm --needed paru-git ## from the guide
+sudo pacman -S --noconfirm --needed rate-mirrors-bin
+sudo pacman -S --noconfirm --needed ripgrep ## from the guide
+sudo pacman -S --noconfirm --needed yay-git ## from the guide
+sudo pacman -S --noconfirm --needed alacritty ## from the guide
+
+sudo pacman -S --noconfirm --needed arc-gtk-theme ## from the guide
+sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin ## from the guide
+sudo pacman -S --noconfirm --needed surfn-icons-git ## from the guide
+sudo pacman -S --noconfirm --needed arconet-wallpapers ## from the guide
+sudo pacman -S --noconfirm --needed sparklines-git ## from the guide
+
+sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
+sudo pacman -S --noconfirm --needed awesome-terminal-fonts
+sudo pacman -S --noconfirm --needed noto-fonts
+sudo pacman -S --noconfirm --needed ttf-bitstream-vera
+sudo pacman -S --noconfirm --needed ttf-dejavu
+sudo pacman -S --noconfirm --needed ttf-droid
+sudo pacman -S --noconfirm --needed ttf-hack ## from the guide
+sudo pacman -S --noconfirm --needed ttf-inconsolata
+sudo pacman -S --noconfirm --needed ttf-liberation
+sudo pacman -S --noconfirm --needed ttf-roboto
+sudo pacman -S --noconfirm --needed ttf-roboto-mono
+sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
+
+sudo pacman -S --noconfirm --needed google-chrome
+sudo pacman -S --noconfirm --needed firefox ## from the guide
+sudo pacman -S --noconfirm --needed flameshot-git
+sudo pacman -S --noconfirm --needed gitahead-git ## from the guide
+sudo pacman -S --noconfirm --needed sublime-text-4 ## from the guide
+sudo pacman -S --noconfirm --needed vlc ## from the guide
+sudo pacman -S --noconfirm --needed variety ## from the guide
+
+sudo pacman -S --noconfirm --needed arcolinux-alacritty-git ## from the guide
+sudo pacman -S --noconfirm --needed archlinux-logout-git ## from the guide
+sudo pacman -S --noconfirm --needed arcolinux-paru-git
+sudo pacman -S --noconfirm --needed arcolinux-root-git
+sudo pacman -S --noconfirm --needed arcolinux-systemd-services-git ## from the guide
+sudo pacman -S --noconfirm --needed arcoinstall-system-config-git ## from the guide
+sudo pacman -S --noconfirm --needed arcoinstall-pacman-git ## from the guide
+sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git ## from the guide
+sudo pacman -S --noconfirm --needed arcolinux-variety-git ## from the guide
+sudo pacman -S --noconfirm --needed arcolinux-variety-autostart-git ## from the guide
+sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git ## from the guide
+
+sudo pacman -S --noconfirm --needed avahi
+sudo systemctl enable avahi-daemon.service
 
 ###############################################################################################
 
@@ -65,48 +122,7 @@ if grep -q "Arch Linux" /etc/os-release; then
   echo "################################################################"
   tput sgr0
   echo
-  sudo pacman -S --noconfirm --needed alacritty
-  sudo pacman -S --noconfirm --needed arcolinux-alacritty-git
-  sudo pacman -S --noconfirm --needed archlinux-logout-git
-  sudo pacman -S --noconfirm --needed arcolinux-paru-git
-  sudo pacman -S --noconfirm --needed arcolinux-root-git
-  sudo pacman -S --noconfirm --needed archlinux-system-config-git
-  sudo pacman -S --noconfirm --needed lsb-release
-  sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
-  sudo pacman -S --noconfirm --needed arcolinux-variety-git
-  sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
-  sudo pacman -S --noconfirm --needed avahi
-  sudo systemctl enable avahi-daemon.service
-  sudo pacman -S --noconfirm --needed bat
-  sudo pacman -S --noconfirm --needed dmenu
-  sudo pacman -S --noconfirm --needed expac
-  sudo pacman -S --noconfirm --needed feh
-  sudo pacman -S --noconfirm --needed gvfs-smb
-  sudo pacman -S --noconfirm --needed hardcode-fixer-git
-  sudo pacman -S --noconfirm --needed hw-probe
-  sudo pacman -S --noconfirm --needed man-db
-  sudo pacman -S --noconfirm --needed man-pages  
-  sudo pacman -S --noconfirm --needed meld
-  sudo pacman -S --noconfirm --needed neofetch
-  sudo pacman -S --noconfirm --needed nss-mdns
-  sudo pacman -S --noconfirm --needed paru-bin
-  sudo pacman -S --noconfirm --needed rate-mirrors-bin
-  sudo pacman -S --noconfirm --needed ripgrep
-  sudo pacman -S --noconfirm --needed variety
-  sudo pacman -S --noconfirm --needed yay-bin
   
-  sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
-  sudo pacman -S --noconfirm --needed awesome-terminal-fonts
-  sudo pacman -S --noconfirm --needed noto-fonts
-  sudo pacman -S --noconfirm --needed ttf-bitstream-vera
-  sudo pacman -S --noconfirm --needed ttf-dejavu
-  sudo pacman -S --noconfirm --needed ttf-droid
-  sudo pacman -S --noconfirm --needed ttf-hack
-  sudo pacman -S --noconfirm --needed ttf-inconsolata
-  sudo pacman -S --noconfirm --needed ttf-liberation
-  sudo pacman -S --noconfirm --needed ttf-roboto
-  sudo pacman -S --noconfirm --needed ttf-roboto-mono
-  sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
 
   echo
   echo "################################################################"
@@ -128,8 +144,8 @@ if grep -q "Arch Linux" /etc/os-release; then
     tput sgr0
     echo
 
-    sudo pacman -S --noconfirm --needed arcolinux-local-xfce4-git
-    sudo pacman -S --noconfirm --needed arcolinux-xfce-git
+    #sudo pacman -S --noconfirm --needed arcolinux-local-xfce4-git
+    sudo pacman -S --noconfirm --needed arconet-xfce ## from the guide
   fi
 
 fi
