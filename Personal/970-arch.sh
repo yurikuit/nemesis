@@ -14,6 +14,12 @@ if [ -f /usr/local/bin/get-nemesis-on-arch ]; then
 	tput sgr0
 	echo
 
+	echo
+	echo "Copying /etc/environment"
+	echo
+ 	sudo cp -vf $installed_dir/settings/environment/environment /etc/environment
+	echo
+
 	if [ -f /usr/share/xsessions/xfce.desktop ]; then
 		echo
 		tput setaf 2
