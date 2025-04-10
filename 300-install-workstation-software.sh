@@ -54,48 +54,6 @@ paru -S --noconfirm davinci-resolve
 paru -S --noconfirm youtube-dl 
 paru -S --noconfirm mkv-extractor-qt
 
-###############################################################################################
-
-# when on Arch Linux
-
-if grep -q "Arch Linux" /etc/os-release; then
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "############### Installing software for Arch Linux - Any desktop"
-  echo "################################################################"
-  tput sgr0
-  echo
-  #sudo pacman -S --noconfirm --needed lsb-release
-
-  # when on Xfce4
-
-  if [ -f /usr/share/xsessions/xfce.desktop ]; then
-
-    echo
-    tput setaf 2
-    echo "################################################################"
-    echo "################### Installing software for Arch Linux - Xfce4"
-    echo "################################################################"
-    tput sgr0
-    echo
-
- #   sudo pacman -S --noconfirm --needed arcolinux-local-xfce4-git
-  fi
-
-fi
-
-echo
-tput setaf 2
-echo "################################################################"
-echo "################### SKEL !!!"
-echo "################################################################"
-tput sgr0
-echo
-
-cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-cp -arf /etc/skel/. ~
-
 echo
 tput setaf 2
 echo "################################################################"
