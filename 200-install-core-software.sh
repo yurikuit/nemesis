@@ -56,7 +56,7 @@ echo
 # here we assume we are on anything Arch Linux based - ArcoLinux as a rule
 cd $HOME"/DATA"
 git clone https://github.com/arcolinux/arcolinux-spices
-sudo $HOME"/DATA/usr/share/arcolinux-spices/scripts/get-the-keys-and-repos.sh"
+sudo $HOME"/DATA/arcolinux-spices/usr/share/arcolinux-spices/scripts/get-the-keys-and-repos.sh"
 sudo pacman -Sy
 
 echo
