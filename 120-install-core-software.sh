@@ -71,7 +71,7 @@ if [ ! -f /usr/share/wayland-sessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed awesome-terminal-fonts
   sudo pacman -S --noconfirm --needed catfish
   sudo pacman -S --noconfirm --needed dmenu
-  sudo pacman -S --noconfirm --needed evince
+  #sudo pacman -S --noconfirm --needed evince
   sudo pacman -S --noconfirm --needed galculator
   sudo pacman -S --noconfirm --needed networkmanager
   sudo pacman -S --noconfirm --needed network-manager-applet
@@ -89,7 +89,7 @@ fi
 
 # All the software below will be installed on all desktops
 sudo pacman -S --noconfirm --needed nano ## from the guide
-sudo pacman -S --noconfirm --needed cpuid
+#sudo pacman -S --noconfirm --needed cpuid
 
 
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
@@ -100,17 +100,17 @@ sudo pacman -S --noconfirm --needed baobab
 sudo pacman -S --noconfirm --needed bash-completion
 sudo pacman -S --noconfirm --needed bat
 sudo pacman -S --noconfirm --needed bibata-cursor-theme
-sudo pacman -S --noconfirm --needed brave-bin
-sudo pacman -S --noconfirm --needed breeze-icons
+#sudo pacman -S --noconfirm --needed brave-bin
+#sudo pacman -S --noconfirm --needed breeze-icons
 sudo pacman -S --noconfirm --needed btop
 sudo pacman -S --noconfirm --needed htop ## from the guide
-sudo pacman -S --noconfirm --needed chromium
+#sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dconf-editor
-sudo pacman -S --noconfirm --needed devtools
-sudo pacman -S --noconfirm --needed discord
+#sudo pacman -S --noconfirm --needed devtools
+#sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed downgrade
-sudo pacman -S --noconfirm --needed dropbox
+#sudo pacman -S --noconfirm --needed dropbox
 if [ ! -f /usr/bin/duf ]; then
   sudo pacman -S --noconfirm --needed duf
 fi
@@ -121,7 +121,7 @@ sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed font-manager
-sudo pacman -S --noconfirm --needed gimp
+#sudo pacman -S --noconfirm --needed gimp
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed google-chrome
@@ -132,8 +132,8 @@ sudo pacman -S --noconfirm --needed hardcode-fixer-git
 sudo pacman -S --noconfirm --needed hardinfo2
 sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed hw-probe
-sudo pacman -S --noconfirm --needed inkscape
-sudo pacman -S --noconfirm --needed insync
+#sudo pacman -S --noconfirm --needed inkscape
+#sudo pacman -S --noconfirm --needed insync
 sudo pacman -S --noconfirm --needed linux-firmware-qlogic
 sudo pacman -S --noconfirm --needed logrotate
 sudo pacman -S --noconfirm --needed lolcat
@@ -149,7 +149,7 @@ sudo pacman -S --noconfirm --needed man-pages
 sudo pacman -S --noconfirm --needed mkinitcpio-firmware
 sudo pacman -S --noconfirm --needed plocate
 sudo pacman -S --noconfirm --needed meld
-sudo pacman -S --noconfirm --needed mintstick
+#sudo pacman -S --noconfirm --needed mintstick
 sudo pacman -S --noconfirm --needed most
 sudo pacman -S --noconfirm --needed namcap
 sudo pacman -S --noconfirm --needed neofetch
@@ -164,19 +164,19 @@ sudo pacman -S --noconfirm --needed paru-git
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed python-pylint
 sudo pacman -S --noconfirm --needed python-pywal
-sudo pacman -S --noconfirm --needed pv
-sudo pacman -S --noconfirm --needed qbittorrent
+#sudo pacman -S --noconfirm --needed pv
+#sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed rate-mirrors
 sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
-sudo pacman -S --noconfirm --needed scrot
-sudo pacman -S --noconfirm --needed simplescreenrecorder
-sudo pacman -S --noconfirm --needed speedtest-cli
-sudo pacman -S --noconfirm --needed spotify
+#sudo pacman -S --noconfirm --needed scrot
+#sudo pacman -S --noconfirm --needed simplescreenrecorder
+#sudo pacman -S --noconfirm --needed speedtest-cli
+#sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
 sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed system-config-printer
-sudo pacman -S --noconfirm --needed telegram-desktop
+#sudo pacman -S --noconfirm --needed telegram-desktop
 sudo pacman -S --noconfirm --needed the_silver_searcher
 sudo pacman -S --noconfirm --needed time
 sudo pacman -S --noconfirm --needed thunar
@@ -194,7 +194,7 @@ sudo pacman -S --noconfirm --needed ttf-roboto-mono
 sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
 sudo pacman -S --noconfirm --needed upd72020x-fw
 sudo pacman -S --noconfirm --needed variety
-sudo pacman -S --noconfirm --needed visual-studio-code-bin
+#sudo pacman -S --noconfirm --needed visual-studio-code-bin
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 sudo pacman -S --noconfirm --needed wget
@@ -216,14 +216,6 @@ sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
 # cloned from https://raw.githubusercontent.com/erikdubois/arcolinux-nemesis/refs/heads/master/Personal/settings/nsswitch/nsswitch.conf
 sudo wget https://raw.githubusercontent.com/yurikuit/nemesis/refs/heads/main/Personal/settings/nsswitch/nsswitch.conf -O $workdir/etc/nsswitch.conf
 
-
-#Enable Bluetooth
-sudo pacman -S --noconfirm --needed bluez
-sudo pacman -S --noconfirm --needed bluez-utils
-sudo pacman -S --noconfirm --needed blueman
-sudo systemctl enable bluetooth
-
-
 sudo pacman -S --noconfirm --needed zip
 sudo pacman -S --noconfirm --needed gzip
 sudo pacman -S --noconfirm --needed p7zip
@@ -231,15 +223,8 @@ sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 
-if [ ! -f /usr/share/xsessions/plasmax11.desktop ]; then
-  sudo pacman -S --noconfirm --needed qt5ct
-  sudo pacman -S --noconfirm --needed kvantum-qt5
-fi
-
 #Run service that will discard unused blocks on mounted filesystems. This is useful for solid-state drives (SSDs) and thinly-provisioned storage. 
 sudo systemctl enable fstrim.timer
-
-
 
 tput setaf 6
 echo "##############################################################"
