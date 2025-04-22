@@ -25,23 +25,12 @@ fi
 ##################################################################################################################################
 
 echo "###################################################################################"
-echo "##      This script assumes you have the linux kernel running        ##"
+echo "##      This script assumes you have the linux-lts kernel running        ##"
 echo "###################################################################################"
 
-
-if pacman -Qi linux &> /dev/null; then
-
-	tput setaf 2
-	echo "########################################################################"
-	echo "#########  Installing linux-headers"
-	echo "########################################################################"
-	tput sgr0
-
-	sudo pacman -S --noconfirm --needed linux-headers
-fi
-
 sudo pacman -S --noconfirm --needed virtualbox
-sudo pacman -S --needed --noconfirm virtualbox-host-dkms
+sudo pacman -S --noconfirm --needed linux-lts-headers
+sudo pacman -S --needed virtualbox-host-dkms
 
 echo "###################################################################################"
 echo "##      Removing all the messages virtualbox produces         ##"

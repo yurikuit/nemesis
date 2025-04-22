@@ -20,18 +20,109 @@ echo "################################################################"
 tput sgr0
 echo
 
-sh 100-remove-software*
-sh 110-install-nemesis-software*
+echo
+tput setaf 3
+echo "########################################################################"
+echo "Do you want to install Chadwm on your system?"
+echo "Answer with Y/y or N/n"
+echo "########################################################################"
+tput sgr0
+echo
 
-sh 200-install-core-software*
+read response
+
+if [[ "$response" == [yY] ]]; then
+    touch /tmp/install-chadwm
+fi
+
+##################################################################################################################################
+
+# Installing chaotic-aur keys and mirrors
+pkg_dir="packages"
+
+# Ensure directory exists
+if [[ ! -d "$pkg_dir" ]]; then
+    echo "Directory not found: $pkg_dir"
+    exit 1
+fi
+
+# Install all local packages using pacman
+find "$pkg_dir" -maxdepth 1 -name '*.pkg.tar.zst' -print0 | sudo xargs -0 pacman -U --noconfirm
+
+
+# personal pacman.conf for Erik Dubois
+if [[ ! -f /etc/pacman.conf.nemesis ]]; then
+    echo
+    tput setaf 2
+    echo "################################################################################"
+    echo "Copying /etc/pacman.conf to /etc/pacman.conf.nemesis"
+    echo "Use npacman when on ArcoLinux to inspect"
+    echo "################################################################################"
+    tput sgr0
+    echo
+    sudo cp -v /etc/pacman.conf /etc/pacman.conf.nemesis
+    echo
+else
+    echo
+    tput setaf 2
+    echo "################################################################################"
+    echo "Backup already exists: /etc/pacman.conf.nemesis"
+    echo "Use npacman when on ArcoLinux to inspect"
+    echo "################################################################################"
+    tput sgr0
+    echo
+fi
+
+sudo cp -v pacman.conf /etc/pacman.conf
 
 echo
 tput setaf 2
-echo "################################################################"
-echo "################### Going to the Personal folder"
-echo "################################################################"
+echo "################################################################################"
+echo "Updating the system - sudo pacman -Syyu"
+echo "################################################################################"
 tput sgr0
-echo 
+echo
+
+sudo pacman -Syyu --noconfirm
+
+echo
+tput setaf 2
+echo "################################################################################"
+echo "Installing much needed software"
+echo "################################################################################"
+tput sgr0
+echo
+
+#first get tools for whatever distro
+sudo pacman -S sublime-text-4 --noconfirm --needed
+sudo pacman -S ripgrep --noconfirm --needed
+sudo pacman -S meld --noconfirm --needed
+
+echo
+tput setaf 3
+echo "########################################################################"
+echo "################### Start of the scripts - choices what to launch or not"
+echo "########################################################################"
+tput sgr0
+echo
+
+sh 100-remove-software*
+sh 110-install-nemesis-software*
+sh 120-install-core-software*
+#sh 200-install-core-software*
+sh 130-install-bluetooth*
+sh 140-install-cups*
+
+# installation of Chadwm
+sh 300-chadwm*
+
+echo
+tput setaf 3
+echo "########################################################################"
+echo "################### Going to the Personal folder"
+echo "########################################################################"
+tput sgr0
+echo
 
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 cd $installed_dir/Personal
