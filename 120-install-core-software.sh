@@ -78,7 +78,6 @@ if [ ! -f /usr/share/wayland-sessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed networkmanager-openvpn
   sudo pacman -S --noconfirm --needed nitrogen
   sudo pacman -S --noconfirm --needed numlockx
-  sudo pacman -S --noconfirm --needed pamac-aur
   sudo pacman -S --noconfirm --needed pavucontrol
   sudo pacman -S --noconfirm --needed playerctl
   #sudo pacman -S --noconfirm --needed sardi-icons
