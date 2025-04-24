@@ -135,6 +135,8 @@ sh 905-install-personal-settings-bookmarks*
 sh 940-btrfs-setup*
 sh 970-arch*
 
+sh 990-skel*
+
 tput setaf 3
 echo "################################################################"
 echo "End current choices"
