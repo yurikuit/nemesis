@@ -87,9 +87,7 @@ fi
 
 # All the software below will be installed on all desktops
 sudo pacman -S --noconfirm --needed nano ## from the guide
-#sudo pacman -S --noconfirm --needed cpuid
-
-
+sudo pacman -S --noconfirm --needed cpuid
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
 sudo pacman -S --noconfirm --needed archlinux-tools
