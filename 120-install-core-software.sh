@@ -148,7 +148,6 @@ sudo pacman -S --noconfirm --needed man-db
 sudo pacman -S --noconfirm --needed man-pages
 sudo pacman -S --noconfirm --needed mkinitcpio-firmware
 sudo pacman -S --noconfirm --needed plocate
-sudo pacman -S --noconfirm --needed meld
 #sudo pacman -S --noconfirm --needed mintstick
 sudo pacman -S --noconfirm --needed most
 sudo pacman -S --noconfirm --needed namcap
@@ -167,14 +166,12 @@ sudo pacman -S --noconfirm --needed python-pywal
 #sudo pacman -S --noconfirm --needed pv
 #sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed rate-mirrors
-sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
 #sudo pacman -S --noconfirm --needed scrot
 #sudo pacman -S --noconfirm --needed simplescreenrecorder
 #sudo pacman -S --noconfirm --needed speedtest-cli
 #sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
-sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed system-config-printer
 #sudo pacman -S --noconfirm --needed telegram-desktop
 sudo pacman -S --noconfirm --needed the_silver_searcher
