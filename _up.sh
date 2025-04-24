@@ -1,21 +1,6 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################################
-# Author    : Erik Dubois
-# Website   : https://www.erikdubois.be
-# Website   : https://www.alci.online
-# Website   : https://www.ariser.eu
-# Website   : https://www.arcolinux.info
-# Website   : https://www.arcolinux.com
-# Website   : https://www.arcolinuxd.com
-# Website   : https://www.arcolinuxb.com
-# Website   : https://www.arcolinuxiso.com
-# Website   : https://www.arcolinuxforum.com
-##################################################################################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
-##################################################################################################################################
 #tput setaf 0 = black
 #tput setaf 1 = red
 #tput setaf 2 = green
@@ -37,31 +22,6 @@
 # https://www.baeldung.com/ops/git-remove-file-without-deleting-it
 # git rm --cached file.txt
 
-workdir=$(pwd)
-
-rm /home/erik/DATA/arcolinux-nemesis/packages/*
-
-pkgdir=/var/cache/pacman/pkg
-target=/home/erik/DATA/arcolinux-nemesis/packages
-
-cp "$pkgdir"/chaotic-keyring*-*-*.pkg.tar.zst "$target"/
-cp "$pkgdir"/chaotic-mirrorlist*-*-*.pkg.tar.zst "$target"/
-
-rm $workdir/mirrorlist
-touch $workdir/mirrorlist
-echo "## Best Arch Linux servers worldwide from arcolinux-nemesis
-
-Server = https://geo.mirror.pkgbuild.com/\$repo/os/\$arch
-Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch
-Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch
-Server = https://mirror.rackspace.com/archlinux/\$repo/os/\$arch
-Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
-Server = http://mirror.osbeck.com/archlinux/\$repo/os/\$arch" | tee $workdir/mirrorlist
-echo
-echo "getting mirrorlist"
-wget "https://archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4&ip_version=6" -O ->> $workdir/mirrorlist
-sed -i "s/#Server/Server/g" $workdir/mirrorlist
-
 # Below command will backup everything inside the project folder
 git add --all .
 
@@ -78,18 +38,7 @@ git commit -m "$input"
 
 # Push the local files to github
 
-if grep -q main .git/config; then
-	echo "Using main"
-		git push -u origin main
-fi
-
-if grep -q master .git/config; then
-	echo "Using master"
-		git push -u origin master
-fi
-
-# force the matter
-# git push -u origin master --force
+git push -u origin main
 
 echo
 tput setaf 6
