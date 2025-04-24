@@ -81,7 +81,6 @@ if [ ! -f /usr/share/wayland-sessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed pavucontrol
   sudo pacman -S --noconfirm --needed playerctl
   #sudo pacman -S --noconfirm --needed sardi-icons
-  sudo pacman -S --noconfirm --needed surfn-icons-git
   sudo pacman -S --noconfirm --needed xcolor
   sudo pacman -S --noconfirm --needed xorg-xkill
 fi
