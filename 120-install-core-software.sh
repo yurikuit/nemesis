@@ -101,7 +101,7 @@ sudo pacman -S --noconfirm --needed bibata-cursor-theme
 sudo pacman -S --noconfirm --needed btop
 sudo pacman -S --noconfirm --needed htop ## from the guide
 #sudo pacman -S --noconfirm --needed chromium
-sudo pacman -S --noconfirm --needed curl
+#sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dconf-editor
 #sudo pacman -S --noconfirm --needed devtools
 #sudo pacman -S --noconfirm --needed discord
@@ -118,13 +118,13 @@ sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed font-manager
 #sudo pacman -S --noconfirm --needed gimp
-sudo pacman -S --noconfirm --needed git
+#sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed gparted
 sudo pacman -S --noconfirm --needed gvfs-smb
 #sudo pacman -S --noconfirm --needed gvfs-dnssd
-sudo pacman -S --noconfirm --needed hardcode-fixer-git
+#sudo pacman -S --noconfirm --needed hardcode-fixer-git
 sudo pacman -S --noconfirm --needed hardinfo2
 sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed hw-probe
@@ -139,7 +139,7 @@ sudo pacman -S --noconfirm --needed lshw
 sudo pacman -S --noconfirm --needed powertop
 sudo pacman -S --noconfirm --needed inxi
 sudo pacman -S --noconfirm --needed acpi
-sudo pacman -S --noconfirm --needed base-devel
+#sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed man-db
 sudo pacman -S --noconfirm --needed man-pages
 sudo pacman -S --noconfirm --needed mkinitcpio-firmware
@@ -185,7 +185,7 @@ sudo pacman -S --noconfirm --needed ttf-liberation
 sudo pacman -S --noconfirm --needed ttf-roboto
 sudo pacman -S --noconfirm --needed ttf-roboto-mono
 sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
-sudo pacman -S --noconfirm --needed upd72020x-fw
+#sudo pacman -S --noconfirm --needed upd72020x-fw
 sudo pacman -S --noconfirm --needed variety
 #sudo pacman -S --noconfirm --needed visual-studio-code-bin
 sudo pacman -S --noconfirm --needed vlc
