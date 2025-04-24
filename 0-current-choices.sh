@@ -112,7 +112,6 @@ echo
 sh 100-remove-software*
 sh 110-install-nemesis-software*
 sh 120-install-core-software*
-#sh 200-install-core-software*
 sh 130-install-bluetooth*
 sh 140-install-cups*
 
