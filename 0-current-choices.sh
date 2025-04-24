@@ -94,9 +94,12 @@ tput sgr0
 echo
 
 #first get tools for whatever distro
-sudo pacman -S sublime-text-4 --noconfirm --needed
-sudo pacman -S ripgrep --noconfirm --needed
-sudo pacman -S meld --noconfirm --needed
+sudo pacman -S --noconfirm --needed sublime-text-4
+sudo pacman -S --noconfirm --needed ripgrep
+sudo pacman -S --noconfirm --needed meld
+sudo pacman -S --noconfirm --needed wget
+sudo pacman -S --noconfirm --needed curl
+sudo pacman -S --noconfirm --needed git
 
 echo
 tput setaf 3
