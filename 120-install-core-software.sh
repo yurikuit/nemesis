@@ -116,6 +116,10 @@ sudo pacman -S --noconfirm --needed fastfetch-git
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
+sudo pacman -S --noconfirm --needed fluent-cursor-theme-git
+sudo pacman -S --noconfirm --needed fluent-gtk-theme-git
+sudo pacman -S --noconfirm --needed fluent-icon-theme-git
+
 sudo pacman -S --noconfirm --needed font-manager
 #sudo pacman -S --noconfirm --needed gimp
 #sudo pacman -S --noconfirm --needed git
