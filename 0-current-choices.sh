@@ -115,6 +115,9 @@ sh 120-install-core-software*
 sh 130-install-bluetooth*
 sh 140-install-cups*
 
+# install from AUR
+200-software-aur-repo
+
 # installation of Chadwm
 sh 300-chadwm*
 
