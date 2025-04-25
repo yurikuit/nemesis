@@ -87,7 +87,7 @@ fi
 
 # All the software below will be installed on all desktops
 sudo pacman -S --noconfirm --needed nano ## from the guide
-sudo pacman -S --noconfirm --needed cpuid
+#sudo pacman -S --noconfirm --needed cpuid        ### must be done through paru/yay
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
 sudo pacman -S --noconfirm --needed archlinux-tools
@@ -170,7 +170,7 @@ sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed squashfs-tools
 sudo pacman -S --noconfirm --needed system-config-printer
 #sudo pacman -S --noconfirm --needed telegram-desktop
-sudo pacman -S --noconfirm --needed the_silver_searcher
+#sudo pacman -S --noconfirm --needed the_silver_searcher
 sudo pacman -S --noconfirm --needed time
 sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed thunar-archive-plugin
