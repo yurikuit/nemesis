@@ -103,7 +103,7 @@ sudo pacman -S --noconfirm --needed htop ## from the guide
 #sudo pacman -S --noconfirm --needed chromium
 #sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dconf-editor
-#sudo pacman -S --noconfirm --needed devtools
+sudo pacman -S --noconfirm --needed devtools
 #sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed downgrade
 #sudo pacman -S --noconfirm --needed dropbox
@@ -116,9 +116,6 @@ sudo pacman -S --noconfirm --needed fastfetch-git
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
-sudo pacman -S --noconfirm --needed fluent-cursor-theme-git
-sudo pacman -S --noconfirm --needed fluent-gtk-theme-git
-sudo pacman -S --noconfirm --needed fluent-icon-theme-git
 
 sudo pacman -S --noconfirm --needed font-manager
 #sudo pacman -S --noconfirm --needed gimp

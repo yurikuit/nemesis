@@ -94,7 +94,7 @@ sudo pacman -R --noconfirm arcolinux-gtk-surfn-arc-git
 sudo pacman -R --noconfirm arcolinux-paru-git
 sudo pacman -R --noconfirm arcolinux-qt5-git
 sudo pacman -R --noconfirm edu-dot-files-git
-
+sudo pacman -R --noconfirm edu-sddm-simplicity-git
 
 sudo pacman -S --noconfirm --needed yuku-dot-files-git
 sudo pacman -S --noconfirm --needed arc-gtk-theme
@@ -104,7 +104,7 @@ sudo pacman -S --noconfirm --needed archlinux-logout-git
 #sudo pacman -S --noconfirm --needed edu-hblock-git
 sudo pacman -S --noconfirm --needed edu-rofi-git
 sudo pacman -S --noconfirm --needed edu-rofi-themes-git
-sudo pacman -S --noconfirm --needed edu-sddm-simplicity-git
+sudo pacman -S --noconfirm --needed yuku-sddm-simplicity-git
 sudo pacman -S --noconfirm --needed edu-shells-git
 sudo pacman -S --noconfirm --needed edu-variety-config-git
 sudo pacman -S --noconfirm --needed edu-xfce-git

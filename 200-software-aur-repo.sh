@@ -47,11 +47,11 @@ echo "########################################################################"
 tput sgr0
 echo
 
-if ! pacman -Qi flat-remix-git &>/dev/null; then
-    yay -S flat-remix-git --noconfirm
-else
-    echo "flat-remix-git is already installed."
-fi
+#if ! pacman -Qi flat-remix-git &>/dev/null; then
+#    yay -S flat-remix-git --noconfirm
+#else
+#    echo "flat-remix-git is already installed."
+#fi
 
 echo
 tput setaf 6
