@@ -35,21 +35,6 @@ echo
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
 [ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
 echo
-echo "Installing all shell files"
-echo
-cp $installed_dir/settings/shell-personal/.bashrc-personal ~
-cp $installed_dir/settings/fish/alias.fish ~/.config/fish/alias.fish
-echo
-echo "Installing personal settings of variety"
-echo
-[ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
-#cp $installed_dir/settings/variety/variety.conf ~/.config/variety/
-cp -R $installed_dir/settings/variety ~/.config/
-echo
-echo "Adding personal looks to /personal"
-echo
-sudo cp -arf ../Personal-iso/personal-iso/* /personal
-echo
 echo "Adding personal thunar to .config/thunar"
 echo
 [ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
