@@ -107,7 +107,7 @@ sudo pacman -S --noconfirm --needed archlinux-logout-git
 sudo pacman -S --noconfirm --needed edu-rofi-git
 sudo pacman -S --noconfirm --needed edu-rofi-themes-git
 sudo pacman -S --noconfirm --needed edu-shells-git
-sudo pacman -S --noconfirm --needed edu-variety-config-git
+#sudo pacman -S --noconfirm --needed edu-variety-config-git
 sudo pacman -S --noconfirm --needed edu-xfce-git
 sudo pacman -S --noconfirm --needed flameshot-git
 sudo pacman -S --noconfirm --needed gitahead-git
